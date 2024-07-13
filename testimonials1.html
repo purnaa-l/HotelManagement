@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Aura Suites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <style>
+    body {
+        font-family: 'Poiret One', cursive;
+        background-color: #F0EBE3;
+        color: #8B4513;
+    }
+
+    .navbar {
+        background-color: #987070;
+    }
+
+    .navbar-brand {
+        font-family: 'Lobster', cursive;
+        font-size: 2.5rem;
+        color: #d4af37;
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffdd00;
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: white;
+    }
+
+    .footer {
+        background-color: #987070;
+        color: #d4af37;
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .footer a {
+        color: #d4af37;
+        margin: 0 10px;
+    }
+
+    .footer a:hover {
+        color: white;
+    }
+
+    .vertical-space {
+        margin-top: 2rem;
+    }
+
+    .testimonial-section h2 {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+    }
+
+    .testimonial-section .card {
+        text-align: center;
+        padding: 1rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    .testimonial-section .card img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .testimonial-section .card-text {
+        font-size: 1.2rem;
+        color: #555;
+    }
+
+    .testimonial-section .card-author {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    @media (max-width: 768px) {
+        .navbar-brand {
+            font-size: 1.8rem;
+        }
+
+        .testimonial-section h2 {
+            font-size: 2rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./Resoruces/LOGO_PDF_jpg.jpg" height="29" alt="AuraSuites"> Aura Suites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link home-link" aria-current="page" href="./index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link user-login-link" href="./UserLogin.php">User Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link admin-login-link" href="./AdminLogin.php">Admin Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./rooms.html">Rooms</a></li>
+                            <li><a class="dropdown-item" href="./amenities.html">Amenities</a></li>
+                            <li><a class="dropdown-item" href="./testimonials1.html">Testimonials</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="vertical-space"></div>
+    <!-- Vertical space -->
+<div class="vertical-space"></div>
+<!-- Vertical space -->
+
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2>What Our Guests Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" class="card-img-top" alt="Guest Image">
+                            <div class="card-body">
+                                <p class="card-text">"My stay at Aura Suites was absolutely delightful! The staff were incredibly accommodating and the amenities were top-notch. I can't wait to come back!"</p>
+                                <p class="card-author">- John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" class="card-img-top" alt="Guest Image">
+                            <div class="card-body">
+                                <p class="card-text">"The dining experience at Aura Suites was simply exquisite. The variety of dishes and the quality of the food exceeded my expectations. Highly recommended!"</p>
+                                <p class="card-author">- Jane Smith</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="https://randomuser.me/api/portraits/men/3.jpg" class="card-img-top" alt="Guest Image">
+                            <div class="card-body">
+                                <p class="card-text">"A perfect place for business meetings. The conference facilities were excellent and the staff were very professional and attentive."</p>
+                                <p class="card-author">- Michael Brown</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="https://randomuser.me/api/portraits/women/4.jpg" class="card-img-top" alt="Guest Image">
+                            <div class="card-body">
+                                <p class="card-text">"The spa at Aura Suites is out of this world! I felt completely rejuvenated after my stay. A must-visit for anyone looking to relax and unwind."</p>
+                                <p class="card-author">- Emily White</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="https://randomuser.me/api/portraits/men/5.jpg" class="card-img-top" alt="Guest Image">
+                            <div class="card-body">
+                                <p class="card-text">"The rooms were spotless and the service was impeccable. I highly recommend Aura Suites for a luxurious stay."</p>
+                                <p class="card-author">- David Clark</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="https://randomuser.me/api/portraits/women/6.jpg" class="card-img-top" alt="Guest Image">
+                            <div class="card-body">
+                                <p class="card-text">"The location is perfect, close to all the major attractions. I had an amazing time exploring the area and coming back to such a comfortable room."</p>
+                                <p class="card-author">- Linda Green</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="vertical-space"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                </div>
+                <div class="col-md-4"></div>
+              </div>
+            <p>&copy; 2024 Aura Suites. All rights reserved.</p>
+            <p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aura.suites@gmail.com" target="_blank">aura.suites@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

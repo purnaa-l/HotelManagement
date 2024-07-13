@@ -1,0 +1,214 @@
+/* Styles for the vertical space and image */
+
+.vertical-space {
+    height: 2px; /* Height for the vertical space */
+    background-color: transparent; /* Ensure the space is invisible */
+    margin: 20px 0; /* Add vertical spacing around the line */
+}
+
+.custom-image {
+    display: block;
+    margin: 20px auto; /* Center the image and add vertical spacing */
+    height: 250px;
+    width: 100%;
+    height: 500px; /* Set a fixed height for all images */
+    object-fit: cover;
+}
+
+/* Center and size the carousel */
+.carousel-container {
+    max-width: 700px; /* Set the maximum width for medium size */
+    margin: 0 auto; /* Center the carousel horizontally */
+    border-color: antiquewhite;
+    border: 10px saddlebrown;
+}
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .py-lg-5 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+  .col-lg-6, .col-md-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0EBE3;
+    color: #4D869C;
+    font-style: italic;
+    
+}
+
+.form-control.date-picker{
+  font-family: 'Poiret One';
+}
+.navbar {
+    background-color: #987070; 
+	padding: 1rem;/* New background color for the navbar */
+}
+
+.navbar-brand img {
+    height: 90px;
+    padding: auto;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive; /* Fancy font for the brand */
+    font-size: 2.5rem;
+    color: #d4af37; /* Custom color for the brand */
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Poiret One', cursive;
+    color: #ffdd00; /* Custom color for nav links */
+    font-size: 1.1rem;
+    font-style: normal;
+} 
+
+.navbar-nav .nav-link:hover {
+    color: white; /* Hover color for nav links */
+}
+
+.navbar-toggler {
+    border-color: #ffdd00; /* Custom color for toggler */
+}
+
+.dropdown-menu {
+    background-color: #987070; /* Dark background for dropdown */
+    font-family: 'Poiret One', cursive;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #ffdd00; /* Custom color for dropdown items */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #A0522D; /* Hover background for dropdown items */
+}
+
+.form-control {
+    border-color: #ffdd00; /* Custom border color for search input */
+    font-family: 'Lora', serif;
+    font-style:normal;
+    font-size: 1rem;
+}
+
+.btn-outline-success {
+    color: #ffdd00;
+    border-color: #ffdd00; /* Custom color for search button */
+}
+
+.btn-outline-success:hover {
+    background-color: #ffdd00;
+    border-color: #ffdd00; /* Custom hover color for search button */
+    color: #8B4513;
+}
+
+.navbar-nav .home-link
+.navbar-nav .user-login-link
+.navbar-nav .admin-login-link 
+ {
+  font-family: 'Poiret One', cursive;
+    color: #ffdd00; /* Custom color for Home */
+}
+
+
+.navbar-nav .home-link:hover,
+.navbar-nav .user-login-link:hover,
+.navbar-nav .admin-login-link:hover
+.navbar-nav .dropdown-menu-link:hover
+.navbar-nav .dropdown-item-link:hover {
+    color: #FFFFFF; /* Hover color for all */
+}
+
+
+footer{
+  background-color: #987070;  
+  width: 100%;
+  height: 100% !important;
+  margin-top: auto;
+  position: relative !important;
+  justify-content: center;
+  size: 100%;
+}
+
+
+
+
+
+.button {
+  font-family: 'Poiret One';
+  font-style: italic;
+  background-color: #987070;
+  color: wheat;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: #333;
+  border-radius: 10%;
+}
+
+.button:hover {
+  color: white;
+}
+
+.form-control.date-picker{
+  background-color: #ffdd00;
+}
+
+.six {
+  width: 100%;
+  height: 20%;
+  background-color: #987070; /* Adjust the background color as needed */
+}
+
+.text-center {
+  text-align: center;
+  text-decoration: wheat;
+}
+
+.fa {
+  margin: 0 10px; /* Adjust spacing between icons */
+  font-size: 20px; /* Adjust the icon size as needed */
+  color: #333; /* Adjust the icon color */
+  text-decoration: none;
+}
+
+
+
+.fa:hover {
+  color: wheat; /* Adjust the hover color */
+}
