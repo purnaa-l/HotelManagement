@@ -3,31 +3,9 @@
 	require_once('dbconnect.php');
 	if (isset($_POST['submit'])) 
 	{
-		/*echo "Hi";
-		echo "val=".$_POST['email'];
-		echo "val=".$_POST['uname'];
-		echo "val=".$_POST['psw'];*/
 		$sql="SELECT * FROM login WHERE email='$_POST[email]'";
-		$result = $conn->query($sql);	//to run SQL
-		//if ($result) {
-		//	echo "Hi.";
-		//} else {
-		//	echo "Error: " . $mysqli->error;
-		//}		
+		$result = $conn->query($sql);	
 		$number_of_records=mysqli_num_rows($result);
-		//echo "val=".$number_of_records;
-		
-		
-		
-		//if ($conn->query($sql) === TRUE)
-		//	{
-		//		echo "New record created successfully";
-		//	} 
-		//else 
-		//	{
-				//echo "Error: " . $sql . "<br>" . $conn->error;
-		//	}
-		
 	}
 ?>
 <html lang="en">
@@ -46,7 +24,7 @@
 
   <style>
     .navbar {
-    background-color: #987070; /* New background color for the navbar */
+    background-color: #987070; 
 }
 
 a:link{
@@ -60,41 +38,41 @@ a:link{
 }
 
 .navbar-brand {
-    font-family: 'Lobster', cursive; /* Fancy font for the brand */
+    font-family: 'Lobster', cursive; 
     font-size: 2.5rem;
-    color: #d4af37; /* Custom color for the brand */
+    color: #d4af37; 
 }
 
 .navbar-nav .nav-link {
     font-family: 'Poiret One', cursive;
-    color: #ffdd00; /* Custom color for nav links */
+    color: #ffdd00; 
     font-size: 1rem;
     font-style: normal;
 } 
 
 .navbar-nav .nav-link:hover {
-    color: white; /* Hover color for nav links */
+    color: white; 
 }
 
 .navbar-toggler {
-    border-color: #ffdd00; /* Custom color for toggler */
+    border-color: #ffdd00;
 }
 
 .dropdown-menu {
-    background-color: #987070; /* Dark background for dropdown */
+    background-color: #987070; 
     font-family: 'Poiret One', cursive;
 }
 
 .dropdown-menu .dropdown-item {
-    color: #ffdd00; /* Custom color for dropdown items */
+    color: #ffdd00; 
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #A0522D; /* Hover background for dropdown items */
+    background-color: #A0522D; 
 }
 
 .form-control {
-    border-color: #ffdd00; /* Custom border color for search input */
+    border-color: #ffdd00; 
     font-family: 'Lora', serif;
     font-style:normal;
     font-size: 1rem;
@@ -102,12 +80,12 @@ a:link{
 
 .btn-outline-success {
     color: #ffdd00;
-    border-color: #ffdd00; /* Custom color for search button */
+    border-color: #ffdd00; 
 }
 
 .btn-outline-success:hover {
     background-color: #ffdd00;
-    border-color: #ffdd00; /* Custom hover color for search button */
+    border-color: #ffdd00; 
     color: #8B4513;
 }
 
@@ -116,7 +94,7 @@ a:link{
 .navbar-nav .admin-login-link 
  {
   font-family: 'Poiret One', cursive;
-    color: #ffdd00; /* Custom color for Home */
+    color: #ffdd00; 
 }
 
 
@@ -125,7 +103,7 @@ a:link{
 .navbar-nav .admin-login-link:hover
 .navbar-nav .dropdown-menu-link:hover
 .navbar-nav .dropdown-item-link:hover {
-    color: #FFFFFF; /* Hover color for all */
+    color: #FFFFFF;
 }
 
 .one{
@@ -145,7 +123,7 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(255, 255, 255, 0.7); /* White overlay with 70% opacity */
+      background-color: rgba(255, 255, 255, 0.7); 
       z-index: -1;
     }
 
@@ -214,7 +192,6 @@ span.psw {
   padding-top: 16px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
      display: block;
@@ -226,7 +203,7 @@ span.psw {
 }
   
 .login-form-container {
-  width: 50%; /* Adjust width as needed */
+  width: 50%; 
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -249,7 +226,7 @@ span.psw {
         }
 
 .login-form-container .container {
-  width: 100%; /* Full width within the form container */
+  width: 100%; 
 }
 
   </style>
@@ -285,10 +262,7 @@ span.psw {
             </ul>
           </li>
         </ul>
-        <!--<form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search for Aura Suites" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
+       
       </div>
     </div>
   </nav>
@@ -305,19 +279,6 @@ span.psw {
    <div class="vertical-space"></div>
    
  <?php
-  /*if (isset($_POST['submit'])) 
-  {
-  if ($number_of_records>0)
-		{
-			echo "Already Registered... So, please login with registered email id ";
-		}
-		else
-		{
-		$sql = "INSERT INTO login (email, username, password) VALUES ('$_POST[email]', '$_POST[uname]', '$_POST[psw]')";
-		$result = $conn->query($sql);
-		echo "Thank you for Registering! Please login to proceed.. ";
-				}
-  }*/
      if (isset($_POST['submit'])) {
         if ($number_of_records > 0) {
             echo '<h5 class="error-message">Oops! You are already registered with this email ID! Kindly Sign In with your registered credentials!</h5>';
@@ -332,7 +293,7 @@ span.psw {
  
   
   <div class="col login-form-container">
-    <form action="signup.php" method="post"> <!--change once backend incorporated -->
+    <form action="signup.php" method="post"> 
 	
       <div class="imgcontainer">
         <img src="./Resoruces/usericon.jpg" alt="UserLogin" class="avatar">
