@@ -11,8 +11,11 @@ The designed software is a great tool and finds numerous practical applications 
 
 • Appealing and Elegant Home page describing various facilities of the Hotel 
 • Ready availability details of rooms on the home page itself  
-• A guest has to register, and he can log in under the "User login" option.   • Every user has a dashboard that will show the status of their requests.  • Users can submit new requests.  
+• A guest has to register, and he can log in under the "User login" option.   
+• Every user has a dashboard that will show the status of their requests.  
+• Users can submit new requests.  
 • The hotel admin has a control panel through which he gets the consolidation list of all requests. 
 • Admin can allot requests, reject, and cancel requests based on need and availability. 
-• Auto Email information to users when the request is submitted and confirmation on the allotment if rejected by admin or cancelled by admin.  • Security features like direct and unauthorised access to associate / linked webpages and user validations, Date picker from the calendar, and validation of every field of data submission are incorporated.  
+• Auto Email information to users when the request is submitted and confirmation on the allotment if rejected by admin or cancelled by admin.  
+• Security features like direct and unauthorised access to associate / linked webpages and user validations, Date picker from the calendar, and validation of every field of data submission are incorporated.  
 • Forgot password / Password restoration options 
